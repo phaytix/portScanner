@@ -6,8 +6,8 @@ import socket
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.settimeout(10)
 
-host = input("Please enter IP you want to scan:")
-port = input("Please enter port you want to scan:")
+host = input("Please enter IP you want to scan: ")
+port = int(input("Please enter port you want to scan: "))
 
 
 def portScanner(port):
